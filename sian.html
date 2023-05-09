@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sian Roadster Galerie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <style>
+      h1 {
+        color: rgb(24, 140, 207);
+        text-align: center;
+      }
+      p {
+        color: rgb(16, 196, 236);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Der Lamborghini Sian FKP 37 Roadster.</h1>
+    <br>
+    <p>Das Design des Sián FKP 37 führt neue, gut durchdachte Aerodynamiklösungen ein, ohne das charakteristische Lamborghini Design zu verfälschen.</p>
+    <p>Dieses Modell ist der erste Supersportwagen mit einem V12-Motor mit Hybrid-Technologie basierend auf Superkondensatoren.</p> 
+    <p>Sián bedeutet Blitz im Bologneser Dialekt und unterstreicht verschiedene Aspekte wie die Schnelligkeit des Autos, das ein Tempo von über 350 km/h erreicht.</p>
+    <p>Der Sián hat einen Hybridantriebsstrang, der ab 2022 auch im Lamborghini Countach LPI 800-4 zum Einsatz kommt.</p>
+    <p>Dieser kombiniert den 6,5-Liter-V12-Ottomotor aus dem Lamborghini Aventador mit einem 48-Volt-Elektromotor,</p> 
+    <p>der direkt im Getriebe verbaut ist. Der Verbrennungsmotor hat 577 kW (785 PS) und der Elektromotor 25 kW (34 PS).</p> 
+    <p>Statt eines Akkumulators, der die elektrische Energie speichert, kommt in dem Wagen ein Superkondensator zum Einsatz.</p> 
+    <p>Auf 100 km/h soll der Supersportwagen in unter 2,8 Sekunden beschleunigen, die Höchstgeschwindigkeit gibt Lamborghini mit über 350 km/h an.</p>
+    <br>
+    <br>
+    <a href="sian_slide.html" class="button01">Slideshow</a>
+    <a href="index.html" class="button02">Startseite</a>
+  </body>
+    
+    
+  </head>
+  <body>
+    <div class="gallery">
+      <img src="img/sian/sian01.jpg" onclick="openModal(this);">
+      <img src="img/sian/sian02.jpg" onclick="openModal(this);">
+      <img src="img/sian/sian03.jpg" onclick="openModal(this);">
+      <img src="img/sian/sian04.jpg" onclick="openModal(this);">
+      <img src="img/sian/sian05.jpg" onclick="openModal(this);">
+      <img src="img/sian/sian06.jpg" onclick="openModal(this);">
+    </div>
+
+    <div id="modal" class="modal">
+      <span class="close" onclick="closeModal();">&times;</span>
+      <div class="modal-content">
+        <img id="modal-img">
+      </div>
+    </div>
+
+    <script>
+      function openModal(img) {
+        document.getElementById("modal").style.display = "block";
+        document.getElementById("modal-img").src = img.src;
+      }
+
+      function closeModal() {
+        document.getElementById("modal").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Veneno Galerie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+
+    <style>
+      h1 {
+        color: rgb(169, 228, 19);
+        text-align: center;
+      }
+      p {
+        color: yellow;
+        text-align: center;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Der Lamborghini Veneno.</h1>
+    <br>
+    <p>Der Lamborghini Veneno ist ein Supersportwagen, der am 5. März 2013 auf dem Genfer Auto-Salon als Coupé vorgestellt wurde.</p> 
+    <p>Der Veneno basiert auf dem Aventador, dessen Zwölfzylindermotor mit einer Leistungssteigerung von 37 kW eingesetzt wird.</p> 
+    <p>Somit leistet der Veneno 552 kW (751 PS). Durch den Einsatz von Karbonfaser und Leichtbauteilen konnte das Gewicht</p> 
+    <p>im Vergleich zum Aventador um 125 kg auf 1450 kg reduziert werden. Dadurch liegt das Leistungsgewicht bei 1,93 kg/PS.</p> 
+    <p>Die Beschleunigung von 0 auf 100 km/h wird mit 2,8 Sekunden und die Höchstgeschwindigkeit mit 355 km/h angegeben.</p> 
+    <p>Die Stückzahl dieses Konzeptautos ist auf drei Exemplare limitiert.</p> 
+    <p>Der Preis für einen Veneno beträgt 3 Millionen Euro (ohne Mehrwertsteuer).</p>
+    <br>
+    <br>
+    <br>
+    <a href="veneno_slide.html" class="button01">Slideshow</a>
+    <a href="index.html" class="button02">Startseite</a>
+
+    
+  </body>
+    
+  </head>
+  <body>
+    <div class="gallery">
+      <img src="img/veneno/veneno01.jpg" onclick="openModal(this);">
+      <img src="img/veneno/veneno02.jpg" onclick="openModal(this);">
+      <img src="img/veneno/veneno03.jpg" onclick="openModal(this);">
+      <img src="img/veneno/veneno04.jpg" onclick="openModal(this);">
+      <img src="img/veneno/veneno05.jpg" onclick="openModal(this);">
+      <img src="img/veneno/veneno06.jpg" onclick="openModal(this);">
+    </div>
+
+    <div id="modal" class="modal">
+      <span class="close" onclick="closeModal();">&times;</span>
+      <div class="modal-content">
+        <img id="modal-img">
+      </div>
+    </div>
+
+    <script>
+      function openModal(img) {
+        document.getElementById("modal").style.display = "block";
+        document.getElementById("modal-img").src = img.src;
+      }
+
+      function closeModal() {
+        document.getElementById("modal").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

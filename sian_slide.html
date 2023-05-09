@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sian Slideshow</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+  <style>
+		
+    .slideshow-container {
+      max-width: 500px;
+      position: relative;
+      margin-left: 500px;
+      margin-top: 30px;
+    }
+
+    .slideshow-container img {
+      display: none;
+      width: 320%;
+      height: auto;
+    }
+
+    .start-button {
+      text-align: left;
+      margin-block-start: 100px;
+      margin-left: 1250px;
+      margin-top: 900px;
+      margin-bottom: 20px;
+    }
+    body {
+			background-image: url('img/back05.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+    .button01 {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #4c61af;
+			color: #fff;
+			text-align: center;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			left: 10%;
+			transform: translate(-50%, -50%);
+		}
+     .button02 {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #4c61af;
+			color: #fff;
+			text-align: center;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			left: 91%;
+			transform: translate(-50%, -50%);
+		}
+    
+  </style>
+</head>
+<body>
+  
+  
+  
+  <div class="slideshow-container">
+    <img src="img/sian/sian01.jpg" alt="Bild 1">
+    <img src="img/sian/sian02.jpg" alt="Bild 2">
+    <img src="img/sian/sian03.jpg" alt="Bild 3">
+    <img src="img/sian/sian04.jpg" alt="Bild 4">
+    <img src="img/sian/sian05.jpg" alt="Bild 5">
+    <img src="img/sian/sian06.jpg" alt="Bild 6">
+  </div>
+
+  <div class="start-button">
+    <button onclick="startSlideshow()">Start Slideshow</button>
+  </div>
+    <a href="sian.html" class="button01">Seite zurück</a>
+    <a href="index.html" class="button02">Startseite</a>
+
+  <script>
+    function startSlideshow() {
+      var images = document.querySelectorAll('.slideshow-container img');
+      var index = 0;
+
+      function showImage() {
+        images[index].style.display = 'none';
+        index = (index + 1) % images.length;
+        images[index].style.display = 'block';
+      }
+
+      // Initiales Bild anzeigen
+      images[index].style.display = 'block';
+
+      // Slideshow starten
+      setInterval(showImage, 2000); // 2000ms = 2 Sekunden
+    }
+  </script>
+</body>
+</html>

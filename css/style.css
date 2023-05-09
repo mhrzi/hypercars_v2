@@ -1,0 +1,158 @@
+body {
+    background-image: url('/img/back06.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+nav {
+    background-color: #333;
+    color: #f7f9f7;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: rgb(240, 7, 240);
+}
+
+.logo01 {
+    background-image: url('/img/logo_trans.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    width: 200px;
+    position: absolute;
+    top: 500px;
+    left: 1200px;
+   
+}
+
+.logo02 {
+    background-image: url('/img/schrift_trans.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    width: 700px;
+    position: absolute;
+    top: 750px;
+    left: 950px;
+   
+    }
+h1 {
+    color: rgb(81, 169, 223);
+    text-align: center;
+}
+p {
+    color: rgb(81, 169, 223);
+    text-align: center;
+}
+.cars {
+    padding-left: 170px;
+    padding-right: 150px;
+}
+
+body {
+    background-image: url('/img/back10.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.gallery img {
+    width: calc(33.33% - 10px);
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-content {
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80%;
+    margin-top: 20px;
+    margin-left: 500px;
+}
+.modal-content img {
+    display: block;
+    width: 200%;
+    height: auto;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button01 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4c61af;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 75%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+}
+.button02 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4c61af;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 75%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+}
